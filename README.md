@@ -6,7 +6,11 @@ Software Development: Writing, compiling, and debugging C and Assembly programs 
 Simulation & Verification: Using industry-standard tools like Spike to simulate program execution and objdump to analyze binary files.
 Digital Design with TL-Verilog: Mastering Transaction-Level Verilog on the MakerChip IDE to describe complex hardware behavior efficiently.
 CPU Microarchitecture: Designing and integrating essential CPU components, including:
+ 
  -> Register File
+ 
  ->Arithmetic Logic Unit (ALU)
+ 
  ->Control Logic
+ 
  ->A complete 5-Stage Pipeline

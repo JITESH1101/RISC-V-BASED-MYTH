@@ -107,6 +107,8 @@ Hands-on Lab Work:
 - Pipelining: Implemented multi-stage logic by replicating a circuit diagram directly in TL-Verilog, leveraging its intuitive pipeline (|pipe) syntax.
 
 - Applying Validity: Enhanced the calculator designs to use the validity feature, observing how it controlled the flow of valid data in the simulation waveforms.
+  
+<img width="2558" height="1422" alt="makerchip_pythagoras_theorem" src="https://github.com/user-attachments/assets/d814613e-64f4-48a5-9bcf-07a494de8f35" />
 
 # Day 4: Designing a Single-Cycle RISC-V CPU Microarchitecture
 

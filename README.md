@@ -136,6 +136,8 @@ Hands-on Lab Work:
 
 - Control Logic: To handle conditional branches by checking ALU outputs.
 
+<img width="1190" height="673" alt="image" src="https://github.com/user-attachments/assets/bb670cf6-bb5e-45dd-8da7-09e464e28196" />
+
 # Day 5: Pipelining the CPU and Completing the RV32I Core
 
 The final day focused on optimizing the CPU with a pipeline and completing the instruction set.

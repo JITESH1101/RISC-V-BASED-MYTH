@@ -20,3 +20,16 @@ CPU Microarchitecture:- Designing and integrating essential CPU components, incl
  3. Control Logic
  
  4. A complete 5-Stage Pipeline
+
+# DEVELOPMENT WORKFLOW
+The project followed a structured, incremental approach:
+
+1. C Programming: Wrote simple algorithms in C.
+
+2. Simulation: Compiled the C code and simulated its execution on the RISC-V Spike simulator.
+
+3. Assembly Translation: Studied the corresponding RISC-V assembly code to understand the hardware-software contract.
+
+4. RTL Design: Began hardware implementation in TL-Verilog, starting with basic components.
+
+5. Integration & Pipelining: Assembled the components into a functional CPU and implemented a 5-stage pipeline to optimize performance.

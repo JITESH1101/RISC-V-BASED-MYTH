@@ -46,23 +46,23 @@ Tools: GCC RISC-V Toolchain, Spike, objdump, MakerChip IDE
 
 The first day focused on understanding the RISC-V ecosystem from a software perspective.
 
-Core Concepts:
+Core Concepts:-
 
-RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
+1. RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
 
-GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
+2. GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
 
-Hands-on Lab Work:
+Hands-on Lab Work:-
 
-Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+1. Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
 
-Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
+2. Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 
-Simulated the compiled object files using the Spike ISA simulator.
+3. Simulated the compiled object files using the Spike ISA simulator.
 
-Used Spike's interactive debug mode to step through programs, set breakpoints at specific program counter (PC) addresses, and inspect the state of registers (like a0, sp).
+4. Used Spike's interactive debug mode to step through programs, set breakpoints at specific program counter (PC) addresses, and inspect the state of registers (like a0, sp).
 
-Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
+5. Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
 
 
 

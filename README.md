@@ -54,7 +54,7 @@ Core Concepts:-
 
 Hands-on Lab Work:-
 
-- Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+- Compiled C programs using < riscv64-unknown-elf-gcc > with different optimization flags (-O1, -Ofast).
 
 - Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 
@@ -136,7 +136,6 @@ Hands-on Lab Work:
 
 - Control Logic: To handle conditional branches by checking ALU outputs.
 
-<img width="1190" height="673" alt="image" src="https://github.com/user-attachments/assets/bb670cf6-bb5e-45dd-8da7-09e464e28196" />
 
 # Day 5: Pipelining the CPU and Completing the RV32I Core
 

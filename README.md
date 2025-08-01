@@ -168,6 +168,7 @@ Completing the RV32I ISA:
 Special thanks to:
 - Kunal Ghosh (VSD)
 - Steve Hoover (Redwood EDA)
+
 for designing and mentoring this workshop.
 
 

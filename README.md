@@ -13,10 +13,10 @@ Digital Design with TL-Verilog:- Mastering Transaction-Level Verilog on the Make
 
 CPU Microarchitecture:- Designing and integrating essential CPU components, including:
  
- -> Register File
+ 1. Register File
  
- ->Arithmetic Logic Unit (ALU)
+ 2. Arithmetic Logic Unit (ALU)
  
- ->Control Logic
+ 3. Control Logic
  
- ->A complete 5-Stage Pipeline
+ 4. A complete 5-Stage Pipeline

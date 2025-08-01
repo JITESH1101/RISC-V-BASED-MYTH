@@ -160,6 +160,10 @@ Completing the RV32I ISA:
 
 - Finalized the ALU operations required by the full instruction set.
 
+# Final RV32I Core
+![WhatsApp Image 2025-07-31 at 01 52 38_e031561d](https://github.com/user-attachments/assets/068b5a80-58ef-4430-b366-cc84b78bd34a)
+
+
 
 
 

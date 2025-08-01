@@ -1,6 +1,6 @@
 # RISC-V-BASED-MYTH
 This repository contains my implementation of a 5-stage pipelined RISC-V CPU, built from the ground up using TL-Verilog. This project was the culmination of my learning in the RISC-V MYTH Workshop, conducted by VLSI System Design (VSD) and Redwood EDA.
-# INTRODUCTION
+# Introduction
 This workshop was a deep dive into the full stack of computer architecture, from software to hardware. Key takeaways include:
 
 RISC-V ISA:- A thorough understanding of the RISC-V instruction set and its design philosophy.
@@ -21,7 +21,7 @@ CPU Microarchitecture:- Designing and integrating essential CPU components, incl
  
  4. A complete 5-Stage Pipeline
 
-# DEVELOPMENT WORKFLOW
+# Development Workflow
 The project followed a structured, incremental approach:
 
 1. C Programming: Wrote simple algorithms in C.
@@ -41,5 +41,28 @@ Languages: C, RISC-V Assembly, TL-Verilog
 Architecture: RISC-V (RV32I)
 
 Tools: GCC RISC-V Toolchain, Spike, objdump, MakerChip IDE
+
+# Day 1: Software Toolchain and ISA Exploration
+
+The first day focused on understanding the RISC-V ecosystem from a software perspective.
+
+Core Concepts:
+
+RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
+
+GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
+
+Hands-on Lab Work:
+
+Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+
+Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
+
+Simulated the compiled object files using the Spike ISA simulator.
+
+Used Spike's interactive debug mode to step through programs, set breakpoints at specific program counter (PC) addresses, and inspect the state of registers (like a0, sp).
+
+Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
+
 
 

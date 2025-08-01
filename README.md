@@ -54,7 +54,7 @@ The first day focused on understanding the RISC-V ecosystem from a software pers
 
 - Hands-on Lab Work:-
 
-1. Compiled C programs using > riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+1. Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
 
 2. Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 

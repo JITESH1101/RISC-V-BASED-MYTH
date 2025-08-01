@@ -46,23 +46,120 @@ Tools: GCC RISC-V Toolchain, Spike, objdump, MakerChip IDE
 
 The first day focused on understanding the RISC-V ecosystem from a software perspective.
 
-- Core Concepts:-
+Core Concepts:-
 
-1. RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
+- RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
 
-2. GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
+- GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
 
-- Hands-on Lab Work:-
+Hands-on Lab Work:-
 
-1. Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+- Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
 
-2. Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
+- Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 
-3. Simulated the compiled object files using the Spike ISA simulator.
+- Simulated the compiled object files using the Spike ISA simulator.
 
-4. Used Spike's interactive debug mode to step through programs, set breakpoints at specific program counter (PC) addresses, and inspect the state of registers (like a0, sp).
+- Used Spike's interactive debug mode to step through programs, set breakpoints at specific program counter (PC) addresses, and inspect the state of registers (like a0, sp).
 
-5. Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
+- Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
+
+# Day 2: Application Binary Interface (ABI) and Verification Flow
+
+This day bridged the gap between high-level software and the underlying hardware conventions.
+
+Core Concepts:
+
+- Application Binary Interface (ABI): Understood the ABI as a set of rules for interoperability, defining how functions are called, arguments are passed, and values are returned.
+
+- RISC-V Calling Conventions: Learned the specific ABI names for the 32 general-purpose registers (a0-a7 for arguments, sp for stack pointer, etc.).
+
+Hands-on Lab Work:
+
+- Created a hybrid program by writing a custom function in RISC-V Assembly (.S file) and calling it from a C program (.c file).
+
+- This exercise demonstrated practical use of the ABI for passing arguments to and receiving results from the assembly function.
+
+- Used the Spike debugger to trace the execution flow between C and assembly, verifying that registers were used according to the calling conventions.
+
+- Introduced the basic hardware verification flow using iverilog and created shell scripts (.sh) to automate the compilation of C programs for a 32-bit RISC-V target (rv32im).
+
+# Day 3: Introduction to Hardware Design with TL-Verilog
+
+The focus shifted from software to hardware, introducing a modern approach to digital design.
+
+Core Concepts:
+
+- TL-Verilog: Introduced as a high-level abstraction over SystemVerilog that simplifies hardware design, reduces code, and minimizes bugs.
+
+- Transaction-Level Design: Learned to think of designs as pipelines where data flows through stages.
+
+- Makerchip IDE: Became familiar with the browser-based IDE for writing, simulating, and visualizing TL-Verilog designs.
+
+- Validity: Learned about the $valid signal, a key feature in TL-Verilog for cleaner design, easier debugging, and implicit clock gating.
+
+Hands-on Lab Work:
+
+- Combinational Logic: Implemented basic logic gates (inverter, adder) and more complex circuits like a multiplexer and an arithmetic calculator.
+
+- Sequential Logic: Built sequential circuits, including a counter and a Fibonacci number generator, using pipelined assignments.
+
+- Pipelining: Implemented multi-stage logic by replicating a circuit diagram directly in TL-Verilog, leveraging its intuitive pipeline (|pipe) syntax.
+
+- Applying Validity: Enhanced the calculator designs to use the validity feature, observing how it controlled the flow of valid data in the simulation waveforms.
+
+# Day 4: Designing a Single-Cycle RISC-V CPU Microarchitecture
+
+With a strong foundation in TL-Verilog, we began constructing the core of the RISC-V CPU.
+
+Core Concepts:
+
+- CPU Microarchitecture: Outlined the essential building blocks of a simple processor.
+
+- Fetch-Decode-Execute Cycle: Implemented the logic for the fundamental stages of instruction processing.
+
+- RISC-V Instruction Formats: Learned to decode the different instruction types (R, I, S, B, U, J) based on their opcode and function fields.
+
+Hands-on Lab Work:
+
+- Designed and implemented the following CPU components in TL-Verilog:
+
+- Program Counter (PC): With logic to increment sequentially or jump to a new address.
+
+- Instruction Memory: To fetch instructions based on the PC.
+
+- Instruction Decoder: To parse the fetched instruction and generate control signals.
+
+- Register File: With two read ports and one write port.
+
+- Arithmetic Logic Unit (ALU): To perform arithmetic and logical operations.
+
+- Control Logic: To handle conditional branches by checking ALU outputs.
+
+# Day 5: Pipelining the CPU and Completing the RV32I Core
+
+The final day focused on optimizing the CPU with a pipeline and completing the instruction set.
+
+Core Concepts:
+
+- Pipelined CPU: Understood the benefits of pipelining and how it improves instruction throughput.
+
+- Load and Store Operations: Learned how to interact with a data memory module.
+
+Hands-on Lab Work:
+
+- Converting to a Pipeline: Effortlessly transformed the single-cycle CPU design into a multi-stage pipelined architecture using TL-Verilog's concise syntax.
+
+- Adding Data Memory: Integrated a Data Memory module to support load and store instructions, enabling the CPU to read from and write to memory.
+
+Completing the RV32I ISA:
+
+- Expanded the instruction decoder and control logic to handle all remaining instructions in the base integer set.
+
+- Added support for unconditional jumps (J-type instructions).
+
+- Finalized the ALU operations required by the full instruction set.
+
 
 
 

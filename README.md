@@ -87,7 +87,8 @@ Hands-on Lab Work:
 
 - Introduced the basic hardware verification flow using iverilog and created shell scripts (.sh) to automate the compilation of C programs for a 32-bit RISC-V target (rv32im).
 
-<img width="436" height="272" alt="image" src="https://github.com/user-attachments/assets/8c24b7e1-003d-441b-aaf7-9a98b1e168e9" />
+<img width="1835" height="1013" alt="image" src="https://github.com/user-attachments/assets/160eacf4-a0e1-4144-a695-261a921ec59f" />
+
 
 # Day 3: Introduction to Hardware Design with TL-Verilog
 

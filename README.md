@@ -136,6 +136,9 @@ Hands-on Lab Work:
 
 - Control Logic: To handle conditional branches by checking ALU outputs.
 
+<img width="1071" height="633" alt="image" src="https://github.com/user-attachments/assets/2899d773-3ec5-4483-acf6-b3df7e0066ff" />
+
+
 
 # Day 5: Pipelining the CPU and Completing the RV32I Core
 
@@ -160,6 +163,8 @@ Completing the RV32I ISA:
 - Added support for unconditional jumps (J-type instructions).
 
 - Finalized the ALU operations required by the full instruction set.
+<img width="1169" height="432" alt="image" src="https://github.com/user-attachments/assets/7fd0c60c-4032-4637-b8ae-0e9919b40290" />
+
 
 # Final RV32I Core
 ![WhatsApp Image 2025-07-31 at 01 52 38_e031561d](https://github.com/user-attachments/assets/068b5a80-58ef-4430-b366-cc84b78bd34a)

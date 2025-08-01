@@ -33,3 +33,13 @@ The project followed a structured, incremental approach:
 4. RTL Design: Began hardware implementation in TL-Verilog, starting with basic components.
 
 5. Integration & Pipelining: Assembled the components into a functional CPU and implemented a 5-stage pipeline to optimize performance.
+
+# Tech Stack
+
+Languages: C, RISC-V Assembly, TL-Verilog
+
+Architecture: RISC-V (RV32I)
+
+Tools: GCC RISC-V Toolchain, Spike, objdump, MakerChip IDE
+
+

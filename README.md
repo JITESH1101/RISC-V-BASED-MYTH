@@ -7,11 +7,11 @@ This workshop was a deep dive into the full stack of computer architecture, from
 
 - Software Development:- Writing, compiling, and debugging C and Assembly programs for a RISC-V target.
 
-Simulation & Verification:- Using industry-standard tools like Spike to simulate program execution and objdump to analyze binary files.
+- Simulation & Verification:- Using industry-standard tools like Spike to simulate program execution and objdump to analyze binary files.
 
-Digital Design with TL-Verilog:- Mastering Transaction-Level Verilog on the MakerChip IDE to describe complex hardware behavior efficiently.
+- Digital Design with TL-Verilog:- Mastering Transaction-Level Verilog on the MakerChip IDE to describe complex hardware behavior efficiently.
 
-CPU Microarchitecture:- Designing and integrating essential CPU components, including:
+- CPU Microarchitecture:- Designing and integrating essential CPU components, including:
  
  1. Register File
  
@@ -46,15 +46,15 @@ Tools: GCC RISC-V Toolchain, Spike, objdump, MakerChip IDE
 
 The first day focused on understanding the RISC-V ecosystem from a software perspective.
 
-Core Concepts:-
+- Core Concepts:-
 
 1. RISC-V ISA: Learned about the base integer ISA (RV64I), its extensions, register width (XLEN), and the 32 integer registers.
 
 2. GNU Compiler Toolchain: Explored the compilation flow from C source code to machine code: Preprocessor -> Compiler -> Assembler -> Linker.
 
-Hands-on Lab Work:-
+- Hands-on Lab Work:-
 
-1. Compiled C programs using riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
+1. Compiled C programs using > riscv64-unknown-elf-gcc with different optimization flags (-O1, -Ofast).
 
 2. Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 

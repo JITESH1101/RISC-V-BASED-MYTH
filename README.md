@@ -54,7 +54,7 @@ Core Concepts:-
 
 Hands-on Lab Work:-
 
-- Compiled C programs using < riscv64-unknown-elf-gcc > with different optimization flags (-O1, -Ofast).
+- Compiled C programs using  riscv64-unknown-elf-gcc  with different optimization flags (-O1, -Ofast).
 
 - Generated and analyzed assembly code using riscv64-unknown-elf-objdump to understand how C constructs translate to machine instructions.
 

@@ -64,6 +64,9 @@ Hands-on Lab Work:-
 
 - Explored integer number representation and data type limitations by modifying C code to handle 64-bit signed and unsigned integers.
 
+  <img width="850" height="268" alt="image" src="https://github.com/user-attachments/assets/51fb5f77-9e43-4cee-9642-e21fe69dec74" />
+
+
 # Day 2: Application Binary Interface (ABI) and Verification Flow
 
 This day bridged the gap between high-level software and the underlying hardware conventions.
@@ -83,6 +86,9 @@ Hands-on Lab Work:
 - Used the Spike debugger to trace the execution flow between C and assembly, verifying that registers were used according to the calling conventions.
 
 - Introduced the basic hardware verification flow using iverilog and created shell scripts (.sh) to automate the compilation of C programs for a 32-bit RISC-V target (rv32im).
+
+<img width="2558" height="1462" alt="image" src="https://github.com/user-attachments/assets/d6e33568-7e2a-470a-ba9e-b8fe78ccc648" />
+
 
 # Day 3: Introduction to Hardware Design with TL-Verilog
 

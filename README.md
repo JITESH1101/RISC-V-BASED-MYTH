@@ -3,9 +3,9 @@ This repository contains my implementation of a 5-stage pipelined RISC-V CPU, bu
 # Introduction
 This workshop was a deep dive into the full stack of computer architecture, from software to hardware. Key takeaways include:
 
-RISC-V ISA:- A thorough understanding of the RISC-V instruction set and its design philosophy.
+- RISC-V ISA:- A thorough understanding of the RISC-V instruction set and its design philosophy.
 
-Software Development:- Writing, compiling, and debugging C and Assembly programs for a RISC-V target.
+- Software Development:- Writing, compiling, and debugging C and Assembly programs for a RISC-V target.
 
 Simulation & Verification:- Using industry-standard tools like Spike to simulate program execution and objdump to analyze binary files.
 
